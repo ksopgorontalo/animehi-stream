@@ -233,13 +233,13 @@ const WatchAnime = ({
                 )}
               </div>
             </div>
-            {/* <div className="col-start-1 col-span-5">
+            { <div className="col-start-1 col-span-5">
               <WatchDetails
                 title={animeList.title}
                 image={animeList.image}
                 description={animeList.description}
               />
-            </div> */}
+            </div> }
           </div>
         </div>
       </div>
