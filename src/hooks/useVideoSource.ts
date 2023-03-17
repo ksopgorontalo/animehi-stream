@@ -10,7 +10,7 @@ const useVideoSource = ({
 }) => {
   const fetcher = async (episodeId: string, provider: string) =>
     fetch(
-      `${BASE_URL}/anime/gogoanime/watch/${episodeId}?provider=${provider}`
+      `${BASE_URL}/meta/anilist/watch/${episodeId}?provider=${provider}`
     ).then(res => res.json());
 
   const { data, error } = useSWRImmutable([episodeId, provider], fetcher);
